@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="modal">
+      <ion-icon class="close__modal" name="close-outline"></ion-icon>
+      <p>Please Enter Numbers Only.</p>
+    </div>
+    <div class="blackout"></div>
+    <span class="bg">ANNUAL PROJECT OF COMPUTER</span>
+    <span class="made">Made With ❤️ By Neek</span>
+
+    <main class="main">
+      <div class="screen">
+        <ion-icon class="del" name="backspace-outline"></ion-icon>
+        <input type="text" class="scr" autofocus />
+      </div>
+      <div class="buttons">
+        <button class="btnn one">1</button>
+        <button class="btnn two">2</button>
+        <button class="btnn three">3</button>
+        <button class="btnn operation add">+</button>
+        <button class="btnn four">4</button>
+        <button class="btnn five">5</button>
+        <button class="btnn six">6</button>
+        <button class="btnn operation sub">-</button>
+        <button class="btnn seven">7</button>
+        <button class="btnn eight">8</button>
+        <button class="btnn nine">9</button>
+        <button class="btnn operation multiply">*</button>
+        <button class="btnn zero">0</button>
+        <button class="btnn operation divide">/</button>
+      </div>
+      <div class="other">
+        <button class="btnn equal-btn">=</button>
+        <button class="clear-btn">AC</button>
+      </div>
+    </main>
+  </body>
+</html>
