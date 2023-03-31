@@ -37,7 +37,6 @@ body {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .screen {
-  user-select: text;
   width: 100%;
   height: 8rem;
   background-color: #fafafa;
@@ -174,7 +173,7 @@ button {
   position: absolute;
   z-index: 2000;
   width: 35rem;
-  height: 20rem;
+  height: 24rem;
   background-color: #eaeaea;
   border-radius: 12px;
   display: none;
@@ -183,6 +182,7 @@ button {
   font-weight: 500;
   color: rgb(41, 41, 41);
   text-align: center;
+  transition: 0.5s ease;
 }
 .close__modal {
   position: absolute;
@@ -192,6 +192,113 @@ button {
   cursor: pointer;
 }
 .modal > p {
-  margin-top: 10rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.about {
+  position: absolute;
+  top: 1.25rem;
+  right: 2rem;
+  color: white;
+  font-family: Rubik;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  background-color: #36096d;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+  border-radius: 4px;
+  padding: 5px;
+  width: 12rem;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border: 1px solid teal;
+}
+.abticon {
+  font-weight: bold;
+  font-size: x-large;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.Resources {
+  font-size: 25px;
+  position: relative;
+}
+.under::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 7rem;
+  right: 0;
+  height: 1em;
+  bottom: -0.6em;
+  background-image: url("https://www.beyondcss.dev/underline.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.twounder::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 5.8rem;
+  right: 0;
+  height: 1em;
+  bottom: -0.6em;
+  background-image: url("https://www.beyondcss.dev/underline.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.yt {
+  color: #ff0000;
+  font-size: 40px;
+}
+.stck {
+  color: orange;
+  font-size: 40px;
+}
+.resources {
+  margin-top: 1rem;
+  position: absolute;
+  margin-left: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.gpt {
+  width: 100px;
+  height: 60px;
+}
+.techstack {
+  margin-top: 3.8rem;
+  position: absolute;
+  margin-left: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.html {
+  color: #e34c26;
+  font-size: 40px;
+}
+
+.css {
+  color: #2965f1;
+  font-size: 40px;
+}
+
+.js {
+  color: #efd81d;
+  font-size: 40px;
+}
+.TechStack {
+  font-size: 25px;
+  position: relative;
+  top: 2rem;
 }

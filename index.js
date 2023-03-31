@@ -6,7 +6,7 @@ const dee = document.querySelector(".del");
 const modal = document.querySelector(".modal");
 const blck = document.querySelector(".blackout");
 const closemodal = document.querySelector(".close__modal");
-
+const abtbtn = document.querySelector(".about");
 let final;
 let arr = [];
 const calc = (inp) => {
@@ -22,8 +22,7 @@ const calc = (inp) => {
         arr = [];
         arr.push(screen.value);
       } catch (err) {
-        modal.style.display = "block";
-        blck.style.display = "block";
+        alert("Number Only!!");
         screen.value = "";
       }
     } else {
@@ -74,4 +73,9 @@ blck.addEventListener("click", () => {
 closemodal.addEventListener("click", () => {
   modal.style.display = "none";
   blck.style.display = "none";
+});
+
+abtbtn.addEventListener("click", () => {
+  modal.style.display = "block";
+  blck.style.display = "block";
 });
